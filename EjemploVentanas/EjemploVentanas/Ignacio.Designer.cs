@@ -34,9 +34,9 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Gainsboro;
-            this.button1.Location = new System.Drawing.Point(235, 141);
+            this.button1.Location = new System.Drawing.Point(151, 341);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(149, 133);
+            this.button1.Size = new System.Drawing.Size(293, 49);
             this.button1.TabIndex = 0;
             this.button1.Text = "Start";
             this.button1.UseVisualStyleBackColor = false;
@@ -47,7 +47,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.ClientSize = new System.Drawing.Size(661, 527);
+            this.BackgroundImage = global::EjemploVentanas.Properties.Resources.funny_cat;
+            this.ClientSize = new System.Drawing.Size(584, 411);
             this.Controls.Add(this.button1);
             this.Name = "Ignacio";
             this.Text = "Ignacio";

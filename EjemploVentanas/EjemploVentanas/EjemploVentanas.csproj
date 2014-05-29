@@ -109,6 +109,7 @@
     <None Include="Resources\Siluetadani.png" />
     <None Include="Resources\SiluetaDiego.png" />
     <None Include="Resources\SiluetaIgnacio.png" />
+    <None Include="Resources\funny-cat.jpg" />
     <Content Include="southpark.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

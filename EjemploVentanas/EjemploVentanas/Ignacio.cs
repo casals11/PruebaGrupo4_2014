@@ -32,7 +32,7 @@ namespace EjemploVentanas
             Random random = new Random();
 
             int top = random.Next(0, 400);
-            int left = random.Next(0, 400);
+            int left = random.Next(0, 500);
             
             boton = new Button();
             boton.Left = left;
@@ -44,7 +44,7 @@ namespace EjemploVentanas
             switch (nombre)
             {
                 default:
-                    this.boton.Text = "Ya me he cansado";
+                    this.boton.Text = "¡Feliz verano!";
                     nombre++;
                     break;
                 case 1:
@@ -89,6 +89,38 @@ namespace EjemploVentanas
                     break;
                 case 11:
                     this.boton.Text = "Pierdes el tiempo";
+                    nombre++;
+                    break;
+                case 12:
+                    this.boton.Text = "Nos aprobarás, no?";
+                    nombre++;
+                    break;
+                case 13:
+                    this.boton.Text = "Como mola el fondo";
+                    nombre++;
+                    break;
+                case 14:
+                    this.boton.Text = "Veo que te gusta";
+                    nombre++;
+                    break;
+                case 15:
+                    this.boton.Text = "No vale usar teclado";
+                    nombre++;
+                    break;
+                case 16:
+                    this.boton.Text = "Si lo sabré yo";
+                    nombre++;
+                    break;
+                case 17:
+                    this.boton.Text = "Corrije a otra persona";
+                    nombre++;
+                    break;
+                case 18:
+                    this.boton.Text = "En serio";
+                    nombre++;
+                    break;
+                case 19:
+                    this.boton.Text = "No hay más que ver";
                     nombre++;
                     break;
             }
