@@ -63,6 +63,26 @@ namespace EjemploVentanas.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap conecta4 {
+            get {
+                object obj = ResourceManager.GetObject("conecta4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap conecta41 {
+            get {
+                object obj = ResourceManager.GetObject("conecta41", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap dani {
             get {
                 object obj = ResourceManager.GetObject("dani", resourceCulture);

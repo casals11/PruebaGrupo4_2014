@@ -16,5 +16,30 @@ namespace EjemploVentanas
         {
             InitializeComponent();
         }
+
+        private void Dani_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox26_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox34_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -70,6 +70,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Dani.resx">
+      <DependentUpon>Dani.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Diego.resx">
       <DependentUpon>Diego.cs</DependentUpon>
     </EmbeddedResource>
@@ -109,6 +112,7 @@
     <None Include="Resources\Siluetadani.png" />
     <None Include="Resources\SiluetaDiego.png" />
     <None Include="Resources\SiluetaIgnacio.png" />
+    <None Include="Resources\conecta4.jpg" />
     <Content Include="southpark.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
