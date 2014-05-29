@@ -16,5 +16,17 @@ namespace EjemploVentanas
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int top = 50;
+            int left = 100;
+
+                Button button = new Button();
+                button.Top = top;
+                this.Controls.Add(button);
+
+                button1.Visible = false;
+        }
     }
 }
