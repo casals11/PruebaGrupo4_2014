@@ -12,21 +12,52 @@ namespace EjemploVentanas
 {
     public partial class Ignacio : Form
     {
+        Button boton;
+        bool desaparece;
+
         public Ignacio()
         {
             InitializeComponent();
         }
 
+        private void quitaBoton()
+        {
+            if (desaparece)
+            {
+                this.boton.Visible = false;
+                desaparece = false;
+            }
+            else
+            {
+                desaparece = true;
+            }
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
-            int top = 50;
-            int left = 100;
+            quitaBoton();
 
-                Button button = new Button();
-                button.Top = top;
-                this.Controls.Add(button);
+            Random random = new Random();
 
-                button1.Visible = false;
+            int top = random.Next(0, 400);
+            int left = random.Next(0, 400);
+
+            boton = new Button();
+            boton.Left = left;
+            boton.Top = top;
+               
+            this.boton.Name = "boton";
+            this.boton.Size = new System.Drawing.Size(75, 23);
+            this.boton.TabIndex = 0;
+            this.boton.Text = "Toma ya!";
+            this.boton.UseVisualStyleBackColor = true;
+            this.boton.Click += new System.EventHandler(this.button1_Click);
+            
+            this.Controls.Add(boton);
+
+            button1.Visible = false;
+
+            
         }
     }
 }
