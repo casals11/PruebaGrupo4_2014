@@ -14,29 +14,20 @@ namespace EjemploVentanas
     {
         Button boton;
         bool desaparece;
+        bool primerClick = true;
 
         public Ignacio()
         {
             InitializeComponent();
         }
 
-        private void quitaBoton()
-        {
-            if (desaparece)
-            {
-                this.boton.Visible = false;
-                desaparece = false;
-            }
-            else
-            {
-                desaparece = true;
-            }
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
-            quitaBoton();
+            
 
+            if (primerClick == false) { this.boton.Visible = false; }
+            
+            
             Random random = new Random();
 
             int top = random.Next(0, 400);
@@ -57,7 +48,8 @@ namespace EjemploVentanas
 
             button1.Visible = false;
 
-            
+            primerClick = false;
+
         }
     }
 }
