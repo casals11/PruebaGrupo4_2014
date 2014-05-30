@@ -1,4 +1,12 @@
-﻿using System;
+﻿/*
+ * Ignacio Peña
+ * 
+ * En esta aplicación saldrá un botón que, al ser pulsado generará otro botón colocado de forma aleatoria 
+ * con un texto diferente
+ * 
+ */
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -25,12 +33,13 @@ namespace EjemploVentanas
         private void button1_Click(object sender, EventArgs e)
         {
             
-
+            //Para diferenciar que si es el primer click sobre button1, no se borre el boton generado
             if (!primerClick) { this.boton.Visible = false; }
             
             
             Random random = new Random();
 
+            //Pos de los botones en pantalla
             int top = random.Next(0, 400);
             int left = random.Next(0, 500);
             
@@ -41,6 +50,7 @@ namespace EjemploVentanas
             this.boton.Name = "boton";
             this.boton.Size = new System.Drawing.Size(120, 23);
             this.boton.TabIndex = 1;
+            //Según el valor del int nombre, se genera un nombre diferente y se suma nombre++
             switch (nombre)
             {
                 default:
@@ -135,6 +145,20 @@ namespace EjemploVentanas
 
             primerClick = false;
 
+
+
+            /*
+             ___    .-"""-.    ___
+             \  \  /\ \ \ \\  /  /
+              }  \/\ \ \ \ \\/  {   
+              }  /\ \ \ \ \ /\  {
+             /__/  \ \ \ \ /  \__\
+                    '-...-'
+             */
+
         }
     }
+
+
 }
+
