@@ -19,7 +19,7 @@ namespace EjemploVentanas
             InitializeComponent();
         }
 
-        
+        //Este increible codigo hace desaparecer los botones!
         private void button1_Click(object sender, EventArgs e)
         {
             button1.Visible = false;
