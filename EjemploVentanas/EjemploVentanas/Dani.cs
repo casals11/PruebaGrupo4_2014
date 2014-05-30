@@ -1,4 +1,11 @@
-﻿using System;
+﻿//
+//Daniel Casals
+//1º de DAM
+//Programación
+//
+
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,8 +20,8 @@ namespace EjemploVentanas
     public partial class Dani : Form
     {
 
-        bool partida = true;
         bool rojas = true;
+        //Los contadores de cada columna
         int contador1 = 0;
         int contador2 = 0;
         int contador3 = 0;
@@ -29,39 +36,26 @@ namespace EjemploVentanas
         public Dani()
         {
             InitializeComponent();
-
-            if (partida == false)
-            {
-                //finalizaJuego();
-            }
         }
 
-        //public void finalizaJuego() {
-        //    if (rojas)
-        //    {
-        //        label1.Text = "Han ganado las fichas rojas";
-        //    }
-        //    else {
-        //        label1.Text = "Han ganado las fichas amarillas";
-        //    }
-        //}
-
-        public void compruebaFinal() {
-            //if (pictureBox1.Image == pictureBox2.Image) {
-            //    finalizaJuego();
-            //}
-        }
-
+        //Cambia el valor del booleano rojas. Si es verdadero es el turno de las rojas, si es falso, el de las amarillas.
+        //Avisa en los labels de la derecha de quién es el turno.
         public void cambiaTurno() {
             if (rojas)
             {
                 rojas = false;
+                label5.Text = "";
+                label6.Text = "Turno Amarillas";
             }
             else {
                 rojas = true;
+                label6.Text = "";
+                label5.Text = "Turno Rojas";
             }
         }
 
+        //Si hay sitio en la columna, al pasar por la primera casilla, te muestra una flecha.
+        //Al salir de la primera casilla vuelve a ponerla vacía en el caso de que no tenga una ficha.
         private void pictureBox1_MouseEnter(object sender, EventArgs e)
         {
             if (contador1 < 8)
@@ -78,6 +72,8 @@ namespace EjemploVentanas
             }
         }
 
+        //Si hay sitio en la columna, al pasar por la primera casilla, te muestra una flecha.
+        //Al salir de la primera casilla vuelve a ponerla vacía en el caso de que no tenga una ficha.
         private void pictureBox10_MouseEnter(object sender, EventArgs e)
         {
             if (contador2 < 9)
@@ -94,6 +90,8 @@ namespace EjemploVentanas
             }
         }
 
+        //Si hay sitio en la columna, al pasar por la primera casilla, te muestra una flecha.
+        //Al salir de la primera casilla vuelve a ponerla vacía en el caso de que no tenga una ficha.
         private void pictureBox19_MouseEnter(object sender, EventArgs e)
         {
             if (contador3 < 9)
@@ -110,6 +108,8 @@ namespace EjemploVentanas
             }
         }
 
+        //Si hay sitio en la columna, al pasar por la primera casilla, te muestra una flecha.
+        //Al salir de la primera casilla vuelve a ponerla vacía en el caso de que no tenga una ficha.
         private void pictureBox28_MouseEnter(object sender, EventArgs e)
         {
             if (contador4 < 9)
@@ -126,6 +126,8 @@ namespace EjemploVentanas
             }
         }
 
+        //Si hay sitio en la columna, al pasar por la primera casilla, te muestra una flecha.
+        //Al salir de la primera casilla vuelve a ponerla vacía en el caso de que no tenga una ficha.
         private void pictureBox37_MouseEnter(object sender, EventArgs e)
         {
             if (contador5 < 9)
@@ -142,6 +144,8 @@ namespace EjemploVentanas
             }
         }
 
+        //Si hay sitio en la columna, al pasar por la primera casilla, te muestra una flecha.
+        //Al salir de la primera casilla vuelve a ponerla vacía en el caso de que no tenga una ficha.
         private void pictureBox46_MouseEnter(object sender, EventArgs e)
         {
             if (contador6 < 9)
@@ -158,6 +162,8 @@ namespace EjemploVentanas
             }
         }
 
+        //Si hay sitio en la columna, al pasar por la primera casilla, te muestra una flecha.
+        //Al salir de la primera casilla vuelve a ponerla vacía en el caso de que no tenga una ficha.
         private void pictureBox55_MouseEnter(object sender, EventArgs e)
         {
             if (contador7 < 9)
@@ -174,6 +180,8 @@ namespace EjemploVentanas
             }
         }
 
+        //Si hay sitio en la columna, al pasar por la primera casilla, te muestra una flecha.
+        //Al salir de la primera casilla vuelve a ponerla vacía en el caso de que no tenga una ficha.
         private void pictureBox64_MouseEnter(object sender, EventArgs e)
         {
             if (contador8 < 9)
@@ -190,6 +198,8 @@ namespace EjemploVentanas
             }
         }
 
+        //Si hay sitio en la columna, al pasar por la primera casilla, te muestra una flecha.
+        //Al salir de la primera casilla vuelve a ponerla vacía en el caso de que no tenga una ficha.
         private void pictureBox73_MouseEnter(object sender, EventArgs e)
         {
             if (contador9 < 9)
@@ -206,6 +216,8 @@ namespace EjemploVentanas
             }
         }
 
+        //Si hay sitio en la columna, al pasar por la primera casilla, te muestra una flecha.
+        //Al salir de la primera casilla vuelve a ponerla vacía en el caso de que no tenga una ficha.
         private void pictureBox82_MouseEnter(object sender, EventArgs e)
         {
             if (contador10 < 9)
@@ -222,9 +234,10 @@ namespace EjemploVentanas
             }
         }
 
+        //Si pulsas en la primera casilla comprueba si hay sitio en la columna y coloca la ficha en caso de haberlo.
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            if (rojas)
+            if (rojas)  //Pone la ficha de color rojo.
             {
                 if (contador1 == 0)
                 {
@@ -281,6 +294,7 @@ namespace EjemploVentanas
                     cambiaTurno();
                 }
             }
+            //Pone la ficha de color amarillo.
             else {
                 if (contador1 == 0)
                 {
@@ -337,12 +351,12 @@ namespace EjemploVentanas
                     cambiaTurno();
                 } 
             }
-            compruebaFinal();
         }
 
+        //Si pulsas en la primera casilla comprueba si hay sitio en la columna y coloca la ficha en caso de haberlo.
         private void pictureBox10_Click(object sender, EventArgs e)
         {
-            if (rojas)
+            if (rojas)  //Pone la ficha de color rojo.
             {
                 if (contador2 == 0)
                 {
@@ -399,6 +413,7 @@ namespace EjemploVentanas
                     cambiaTurno();
                 }
             }
+            //Pone la ficha de color amarillo.
             else
             {
                 if (contador2 == 0)
@@ -458,9 +473,10 @@ namespace EjemploVentanas
             }
         }
 
+        //Si pulsas en la primera casilla comprueba si hay sitio en la columna y coloca la ficha en caso de haberlo.
         private void pictureBox19_Click(object sender, EventArgs e)
         {
-            if (rojas)
+            if (rojas)  //Pone la ficha de color rojo.
             {
                 if (contador3 == 0)
                 {
@@ -517,6 +533,7 @@ namespace EjemploVentanas
                     cambiaTurno();
                 }
             }
+            //Pone la ficha de color amarillo.
             else
             {
                 if (contador3 == 0)
@@ -574,12 +591,12 @@ namespace EjemploVentanas
                     cambiaTurno();
                 }
             }
-            compruebaFinal();
         }
 
+        //Si pulsas en la primera casilla comprueba si hay sitio en la columna y coloca la ficha en caso de haberlo.
         private void pictureBox28_Click(object sender, EventArgs e)
         {
-            if (rojas)
+            if (rojas)  //Pone la ficha de color rojo.
             {
                 if (contador4 == 0)
                 {
@@ -636,6 +653,7 @@ namespace EjemploVentanas
                     cambiaTurno();
                 }
             }
+            //Pone la ficha de color amarillo.
             else
             {
                 if (contador4 == 0)
@@ -693,12 +711,12 @@ namespace EjemploVentanas
                     cambiaTurno();
                 }
             }
-            compruebaFinal();
         }
 
+        //Si pulsas en la primera casilla comprueba si hay sitio en la columna y coloca la ficha en caso de haberlo.
         private void pictureBox37_Click(object sender, EventArgs e)
         {
-            if (rojas)
+            if (rojas)  //Pone la ficha de color rojo.
             {
                 if (contador5 == 0)
                 {
@@ -755,6 +773,7 @@ namespace EjemploVentanas
                     cambiaTurno();
                 }
             }
+            //Pone la ficha de color amarillo.
             else
             {
                 if (contador5 == 0)
@@ -812,12 +831,12 @@ namespace EjemploVentanas
                     cambiaTurno();
                 }
             }
-            compruebaFinal();
         }
 
+        //Si pulsas en la primera casilla comprueba si hay sitio en la columna y coloca la ficha en caso de haberlo.
         private void pictureBox46_Click(object sender, EventArgs e)
         {
-            if (rojas)
+            if (rojas)  //Pone la ficha de color rojo.
             {
                 if (contador6 == 0)
                 {
@@ -874,6 +893,7 @@ namespace EjemploVentanas
                     cambiaTurno();
                 }
             }
+            //Pone la ficha de color amarillo.
             else
             {
                 if (contador6 == 0)
@@ -931,12 +951,12 @@ namespace EjemploVentanas
                     cambiaTurno();
                 }
             }
-            compruebaFinal();
         }
 
+        //Si pulsas en la primera casilla comprueba si hay sitio en la columna y coloca la ficha en caso de haberlo.
         private void pictureBox55_Click(object sender, EventArgs e)
         {
-            if (rojas)
+            if (rojas)  //Pone la ficha de color rojo.
             {
                 if (contador7 == 0)
                 {
@@ -993,6 +1013,7 @@ namespace EjemploVentanas
                     cambiaTurno();
                 }
             }
+            //Pone la ficha de color amarillo.
             else
             {
                 if (contador7 == 0)
@@ -1050,12 +1071,12 @@ namespace EjemploVentanas
                     cambiaTurno();
                 }
             }
-            compruebaFinal();
         }
 
+        //Si pulsas en la primera casilla comprueba si hay sitio en la columna y coloca la ficha en caso de haberlo.
         private void pictureBox64_Click(object sender, EventArgs e)
         {
-            if (rojas)
+            if (rojas)  //Pone la ficha de color rojo.
             {
                 if (contador8 == 0)
                 {
@@ -1112,6 +1133,7 @@ namespace EjemploVentanas
                     cambiaTurno();
                 }
             }
+            //Pone la ficha de color amarillo.
             else
             {
                 if (contador8 == 0)
@@ -1169,12 +1191,12 @@ namespace EjemploVentanas
                     cambiaTurno();
                 }
             }
-            compruebaFinal();
         }
 
+        //Si pulsas en la primera casilla comprueba si hay sitio en la columna y coloca la ficha en caso de haberlo.
         private void pictureBox73_Click(object sender, EventArgs e)
         {
-            if (rojas)
+            if (rojas)  //Pone la ficha de color rojo.
             {
                 if (contador9 == 0)
                 {
@@ -1231,6 +1253,7 @@ namespace EjemploVentanas
                     cambiaTurno();
                 }
             }
+            //Pone la ficha de color amarillo.
             else
             {
                 if (contador9 == 0)
@@ -1288,12 +1311,12 @@ namespace EjemploVentanas
                     cambiaTurno();
                 }
             }
-            compruebaFinal();
         }
 
+        //Si pulsas en la primera casilla comprueba si hay sitio en la columna y coloca la ficha en caso de haberlo.
         private void pictureBox82_Click(object sender, EventArgs e)
         {
-            if (rojas)
+            if (rojas)  //Pone la ficha de color rojo.
             {
                 if (contador10 == 0)
                 {
@@ -1350,6 +1373,7 @@ namespace EjemploVentanas
                     cambiaTurno();
                 }
             }
+            //Pone la ficha de color amarillo.
             else
             {
                 if (contador10 == 0)
@@ -1407,7 +1431,6 @@ namespace EjemploVentanas
                     cambiaTurno();
                 }
             }
-            compruebaFinal();
         }
 
 

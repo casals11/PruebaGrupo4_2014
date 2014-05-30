@@ -253,7 +253,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Red;
-            this.label5.Location = new System.Drawing.Point(581, 151);
+            this.label5.Location = new System.Drawing.Point(581, 263);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(129, 78);
             this.label5.TabIndex = 94;
@@ -265,11 +265,10 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Yellow;
-            this.label6.Location = new System.Drawing.Point(574, 245);
+            this.label6.Location = new System.Drawing.Point(574, 171);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(136, 78);
             this.label6.TabIndex = 95;
-            this.label6.Text = "Turno Amarillas";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox82
