@@ -3,6 +3,8 @@ PruebaGrupo4_2014
 
 La práctica en equipo de C# DAM 2014
 
+----------------------------------------------------------
+
 
 Practica del grupo formado por Ignacio Peña, Diego Botas y Dani Casals.
 
